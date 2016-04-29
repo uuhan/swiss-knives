@@ -9,3 +9,5 @@ public/js/jquery.js
 
 PORT=5000 webdev-hamlet public res/site.hamlet
 http://localhost:5000/assets/js/jquery.js
+
+** assets目录默认为当前目录
