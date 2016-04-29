@@ -1,0 +1,4 @@
+PORT=<PORT> webdev-hamlet <HAMLET TEMPLATE>
+
+例如:
+PORT=5000 webdev-hamlet res/site.hamlet
