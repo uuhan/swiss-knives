@@ -26,6 +26,17 @@ mkYesod "App" [parseRoutes|
 
 instance Yesod App where
     makeSessionBackend _ = pure Nothing
+    defaultLayout w = do
+        PageContent{..} <- widgetToPageContent w
+        withUrlRenderer [hamlet|
+        $newline never
+        $doctype 1.1
+        <html>
+            <head>
+                ^{pageHead}
+            <body>
+                ^{pageBody}
+        |]
 
 getHomeR :: Handler Html
 getHomeR = do
