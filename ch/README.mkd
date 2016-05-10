@@ -1,0 +1,3 @@
+** 小工具用于chroot到其他的linux root环境 **
+cargo build --release
+sudo target/release/ch /path/to/root
